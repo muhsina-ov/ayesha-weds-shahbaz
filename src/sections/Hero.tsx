@@ -216,26 +216,31 @@ export default function Hero() {
             {wedding.timeLabel}
           </motion.p>
 
-          {/* Royal Blessing & Qur'an Medallion */}
+          {/* Royal Floral Lantern Centerpiece filling the empty space */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 flex w-full max-w-sm flex-col items-center rounded-3xl border border-[#d4af37]/35 bg-[#fffaf4]/65 px-6 py-5 shadow-[0_12px_36px_rgba(60,45,30,0.06)] backdrop-blur-xs ring-1 ring-[rgba(26,24,20,0.04)]"
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 1.15, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            className="relative mt-5 flex flex-col items-center"
           >
-            <p className="font-arabic text-xl tracking-wide text-[#b38f4d] sm:text-2xl">
-              {wedding.verse.arabic}
-            </p>
-            <div className="my-2.5 flex items-center gap-2 text-[#8a7a68]">
-              <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#d4af37]/40" />
-              <span className="text-[10px] text-[#b38f4d]">✦</span>
-              <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#d4af37]/40" />
-            </div>
-            <p className="font-display text-sm italic text-[#4a4036] sm:text-base">
+            {/* Soft radiant ambient glow behind the lanterns */}
+            <div className="pointer-events-none absolute -inset-6 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.25)_0%,rgba(255,250,242,0.1)_50%,transparent_75%)] blur-lg" />
+
+            <motion.img
+              src="/assets/layers/hero-centerpiece.png"
+              alt="Royal Islamic Wedding Lanterns and Floral Arrangement"
+              className="relative z-10 w-56 max-w-[240px] drop-shadow-[0_18px_38px_rgba(60,45,30,0.15)] sm:w-64 sm:max-w-[280px]"
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+              draggable={false}
+            />
+
+            {/* Subtle Qur'an Verse Ribbon */}
+            <p className="relative z-10 mt-3 font-display text-xs italic tracking-wider text-[#6a5e52] sm:text-sm">
               {wedding.verse.quote}
-            </p>
-            <p className="mt-1 text-[10px] uppercase tracking-[0.28em] text-[#8a7a68]">
-              {wedding.verse.source}
+              <span className="ml-1.5 not-italic text-[10px] uppercase tracking-[0.22em] text-[#9b8b78]">
+                {wedding.verse.source}
+              </span>
             </p>
           </motion.div>
         </div>
