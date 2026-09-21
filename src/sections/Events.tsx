@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Reveal, { ParallaxBlock } from "../components/Reveal";
+import Reveal from "../components/Reveal";
 import { useLocalTilt } from "../hooks/useParallax";
 import { wedding } from "../config";
 
@@ -64,16 +64,6 @@ export default function Events() {
 
   return (
     <section className="relative overflow-hidden px-4 py-24 sm:px-6">
-      <ParallaxBlock
-        speed={0.18}
-        className="pointer-events-none absolute -left-10 top-24 opacity-[0.06]"
-      >
-        <img
-          src="/assets/layers/layer-couple.png"
-          alt=""
-          className="w-56 -scale-x-100 sm:w-72"
-        />
-      </ParallaxBlock>
 
       <Reveal className="mb-12 flex flex-col items-center gap-3 text-center">
         <span className="text-[11px] uppercase tracking-[0.4em] text-[#8a7a68]">

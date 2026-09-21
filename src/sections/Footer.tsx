@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Reveal, { ParallaxBlock } from "../components/Reveal";
+import Reveal from "../components/Reveal";
 import { wedding } from "../config";
 
 export default function Footer() {
@@ -19,18 +19,6 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden px-6 pb-16 pt-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#1a1814]/12 to-transparent" />
-
-      {/* Soft couple silhouette fade */}
-      <ParallaxBlock
-        speed={0.15}
-        className="pointer-events-none absolute inset-x-0 bottom-0 top-8 opacity-[0.08]"
-      >
-        <img
-          src="/assets/layers/layer-couple.png"
-          alt=""
-          className="mx-auto h-full max-w-md object-contain object-bottom"
-        />
-      </ParallaxBlock>
 
       <div className="relative z-10 mb-10 overflow-hidden py-3">
         <div
