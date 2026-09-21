@@ -19,9 +19,9 @@ export const wedding = {
   timeLabel: "Nikah · After 7:00 PM",
 
   venue: {
-    name: "The Ivory Courtyard",
-    address: "12 Jasmine Lane, Bandra West, Mumbai 400050",
-    mapsQuery: "Bandra West Mumbai",
+    name: "Kothagudem Club",
+    address: "N.K. Nagar, Writer Basti, Kothagudem, Telangana 507101",
+    mapsQuery: "Kothagudem Club, Kothagudem, Telangana 507101",
   },
 
   blessing: "WITH THE BLESSINGS OF OUR BELOVED PARENTS & FAMILIES",
@@ -46,7 +46,7 @@ export const wedding = {
       dayNum: "10",
       monthLabel: "December 2026",
       time: "7:00 PM",
-      venue: "The Ivory Courtyard",
+      venue: "Kothagudem Club",
       note: "An auspicious evening filled with golden turmeric, joy, and blessed beginnings.",
     },
     {
@@ -58,7 +58,7 @@ export const wedding = {
       dayNum: "11",
       monthLabel: "December 2026",
       time: "7:00 PM",
-      venue: "The Ivory Courtyard",
+      venue: "Kothagudem Club",
       note: "Intricate henna designs, sweet melodies, and celebratory laughter.",
     },
     {
@@ -70,7 +70,7 @@ export const wedding = {
       dayNum: "12",
       monthLabel: "December 2026",
       time: "After 7:00 PM",
-      venue: "The Ivory Courtyard",
+      venue: "Kothagudem Club",
       note: "The sacred bond of marriage, solemn vows, and heartfelt prayers.",
     },
   ],
@@ -84,7 +84,7 @@ export const wedding = {
 
   sections: {
     events: true,
-    venue: false,
+    venue: true,
     countdown: true,
   },
 };
