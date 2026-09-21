@@ -11,6 +11,7 @@ import Venue from "../sections/Venue";
 import Footer from "../sections/Footer";
 import ScrollProgress from "../components/ScrollProgress";
 import FloatingPetals from "../components/FloatingPetals";
+import AudioPlayer from "../components/AudioPlayer";
 import { wedding } from "../config";
 
 type Stage = "closed" | "opening" | "open";
@@ -42,6 +43,7 @@ export default function Home() {
   return (
     <main className="relative min-h-[100dvh] bg-[#f3ede3] text-[#1a1814]">
       <ScrollProgress />
+      <AudioPlayer autoPlayTrigger={stage === "open" || stage === "opening"} />
       {stage === "open" && <FloatingPetals count={16} />}
       <motion.div
         initial={{ scale: 1.04, opacity: 0.92 }}

@@ -75,6 +75,18 @@ export default function Hero() {
         />
       </div>
 
+      {/* Ambient Reel Video Background Layer */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-25 mix-blend-multiply">
+        <video
+          src="/assets/video/hero-ambient.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover filter blur-[0.5px]"
+        />
+      </div>
+
       <CursorGlow x={point.x} y={point.y} />
 
       {/* Ambient background glow & sparkles */}
@@ -203,6 +215,29 @@ export default function Hero() {
           >
             {wedding.timeLabel}
           </motion.p>
+
+          {/* Royal Blessing & Qur'an Medallion */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-8 flex w-full max-w-sm flex-col items-center rounded-3xl border border-[#d4af37]/35 bg-[#fffaf4]/65 px-6 py-5 shadow-[0_12px_36px_rgba(60,45,30,0.06)] backdrop-blur-xs ring-1 ring-[rgba(26,24,20,0.04)]"
+          >
+            <p className="font-arabic text-xl tracking-wide text-[#b38f4d] sm:text-2xl">
+              {wedding.verse.arabic}
+            </p>
+            <div className="my-2.5 flex items-center gap-2 text-[#8a7a68]">
+              <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#d4af37]/40" />
+              <span className="text-[10px] text-[#b38f4d]">✦</span>
+              <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#d4af37]/40" />
+            </div>
+            <p className="font-display text-sm italic text-[#4a4036] sm:text-base">
+              {wedding.verse.quote}
+            </p>
+            <p className="mt-1 text-[10px] uppercase tracking-[0.28em] text-[#8a7a68]">
+              {wedding.verse.source}
+            </p>
+          </motion.div>
         </div>
       </motion.div>
 

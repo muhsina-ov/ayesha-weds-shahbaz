@@ -5,13 +5,19 @@
 export const wedding = {
   bride: "Ayeshaa",
   groom: "Shahbaz",
-  brideFull: "Ayeshaa Khatoon",
+  brideFull: "Ayeshaa",
   groomFull: "Shahbaz Alam",
   brideParents: "D/o Mohammad Khalid Khan & Salma Begum",
   groomParents: "S/o Mohammad Seraj & Farzana Gani",
   hashtag: "#AyeshaaWedsShahbaz",
   monogram: "A · S",
   families: "The Khan & Alam Families",
+
+  music: {
+    src: "/audio/bg-music.mp3",
+    title: "Bismillah",
+    enabled: true,
+  },
 
   // Wedding (countdown + calendar) — Main ceremony: Nikah
   dateISO: "2026-12-12T19:00:00+05:30",
