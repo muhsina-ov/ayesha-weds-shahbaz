@@ -102,14 +102,6 @@ export default function IntroGate({
         >
           {wedding.bride} & {wedding.groom}
         </motion.h2>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.7 }}
-          className="mt-3 max-w-xs font-display text-base italic leading-relaxed text-[#5c5146]"
-        >
-          Open gently — a waltz awaits
-        </motion.p>
         <motion.button
           type="button"
           onClick={handleOpen}

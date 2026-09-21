@@ -90,7 +90,7 @@ export default function CountdownSection() {
         <p className="text-[11px] uppercase tracking-[0.4em] text-[#8a7a68]">
           Counting the moments
         </p>
-        <h2 className="mt-3 font-script text-5xl text-[#1a1814]">Until we waltz</h2>
+        <h2 className="mt-3 font-script text-5xl text-[#1a1814]">Until the Nikah</h2>
         <div className="mt-10 grid grid-cols-4 gap-3 sm:gap-4">
           {cells.map((c, i) => (
             <CountCell
