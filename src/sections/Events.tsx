@@ -126,11 +126,6 @@ export default function Events() {
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#3d342c]">
                   {event.time}
                 </p>
-
-                {/* Note / description */}
-                <p className="mt-3 max-w-[220px] font-display text-xs italic leading-relaxed text-[#6e6256]">
-                  {event.note}
-                </p>
               </motion.div>
             ))}
           </div>
@@ -147,60 +142,6 @@ export default function Events() {
             </p>
           </div>
         </motion.div>
-
-        {/* Day of Nikah Program timeline */}
-        <div className="relative mx-auto mt-16 max-w-sm">
-          <p className="mb-8 text-center text-[11px] uppercase tracking-[0.4em] text-[#8a7a68]">
-            Nikah Day Itinerary · 12 December
-          </p>
-          <div className="relative">
-            <motion.div
-              className="absolute bottom-2 left-[5px] top-2 w-px origin-top bg-gradient-to-b from-[#1a1814]/30 via-[#1a1814]/15 to-transparent"
-              initial={{ scaleY: 0 }}
-              whileInView={{ scaleY: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            />
-            <div className="flex flex-col gap-6">
-              {wedding.program.map((step, i) => (
-                <motion.div
-                  key={step.name}
-                  initial={{ opacity: 0, x: -16 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{
-                    delay: 0.15 + i * 0.09,
-                    duration: 0.65,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  whileHover={{ x: 4 }}
-                  className="flex cursor-default items-start gap-4 pl-1"
-                >
-                  <motion.span
-                    className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-[#1a1814]/70 ring-4 ring-[#f3ede3]"
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                      delay: 0.2 + i * 0.09,
-                      type: "spring",
-                      stiffness: 320,
-                      damping: 18,
-                    }}
-                  />
-                  <div className="flex flex-1 items-baseline justify-between gap-3">
-                    <p className="font-display text-lg text-[#2c261f]">
-                      {step.name}
-                    </p>
-                    <p className="shrink-0 text-[11px] uppercase tracking-[0.18em] text-[#7a6d60]">
-                      {step.time}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
       </Reveal>
     </section>
   );
