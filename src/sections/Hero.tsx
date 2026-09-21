@@ -143,14 +143,26 @@ export default function Hero() {
         style={{ y: textY, opacity: textOpacity }}
       >
         <div className="flex w-full flex-col items-center will-change-transform" style={layers.title}>
-          {/* Elegant Arch & Monogram Crest */}
+          {/* Elegant Arch & Monogram Crest — custom AS logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-[#d4af37]/35 bg-[#fffaf4]/60 shadow-[0_8px_24px_rgba(60,45,30,0.06)] backdrop-blur-xs"
+            className="relative mb-6 flex h-28 w-28 items-center justify-center"
           >
-            <span className="font-script text-3xl text-[#1a1814] sm:text-4xl">
+            <img
+              src="/assets/monogram.png"
+              alt="A S wedding monogram"
+              className="h-full w-full object-contain"
+              draggable={false}
+              onError={(e) => {
+                // Fallback to text monogram if image missing
+                const el = e.currentTarget;
+                el.style.display = "none";
+                el.nextElementSibling?.classList.remove("hidden");
+              }}
+            />
+            <span className="hidden font-script text-3xl text-[#1a1814] sm:text-4xl">
               {wedding.monogram}
             </span>
           </motion.div>

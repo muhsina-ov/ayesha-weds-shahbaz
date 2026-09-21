@@ -75,7 +75,7 @@ export const wedding = {
       dayLabel: "Saturday",
       dayNum: "12",
       monthLabel: "December 2026",
-      time: "After 7:00 PM",
+      time: "7:00 PM",
       venue: "Kothagudem Club",
       note: "The sacred bond of marriage, solemn vows, and heartfelt prayers.",
     },
@@ -89,7 +89,7 @@ export const wedding = {
   ],
 
   sections: {
-    events: true,
+    events: false,
     venue: true,
     countdown: true,
   },
