@@ -84,7 +84,7 @@ export const wedding = {
 
   sections: {
     events: true,
-    venue: true,
+    venue: false,
     countdown: true,
   },
 };
