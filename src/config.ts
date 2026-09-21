@@ -8,7 +8,6 @@ export const wedding = {
   brideFull: "Ayeshaa Khatoon",
   groomFull: "Shahbaz Alam",
   brideParents: "D/o Mohammad Khalid Khan & Salma Begum",
-  brideGrandparents: "Granddaughter of Sardar Khan & Khairunisa Begum",
   groomParents: "S/o Mohammad Seraj & Farzana Gani",
   hashtag: "#AyeshaaWedsShahbaz",
   monogram: "A · S",
@@ -26,7 +25,7 @@ export const wedding = {
   },
 
   blessing: "WITH THE BLESSINGS OF OUR BELOVED PARENTS & FAMILIES",
-  request: "We joyfully request your presence at the Nikah of our beloved daughter & granddaughter",
+  request: "We joyfully request your presence at the Nikah of our beloved daughter",
   warmNote: "Your presence will make our celebration even more special.",
   graceNote: "Kindly grace us with your presence",
 
@@ -34,7 +33,7 @@ export const wedding = {
     arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
     quote: "“And We created you in pairs”",
     source: "(Qur'an 78:8)",
-    text: "“And We created you in pairs” (Qur'an 78:8) — With the blessings of our beloved parents and families, we joyfully request your presence at the Nikah of our beloved daughter & granddaughter.",
+    text: "“And We created you in pairs” (Qur'an 78:8) — With the blessings of our beloved parents and families, we joyfully request your presence at the Nikah of our beloved daughter.",
   },
 
   events: [

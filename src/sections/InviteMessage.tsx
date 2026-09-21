@@ -75,10 +75,10 @@ export default function InviteMessage() {
             </div>
 
             {/* Blessings & Request */}
-            <p className="text-[10px] uppercase tracking-[0.32em] text-[#8a7a68] sm:text-[11px]">
+            <p className="font-display text-[11px] uppercase tracking-[0.32em] text-[#8a7a68] sm:text-xs">
               {wedding.blessing}
             </p>
-            <p className="mt-2 font-display text-base text-[#4a4036] sm:text-lg">
+            <p className="mt-2.5 font-display text-base text-[#4a4036] sm:text-lg">
               We joyfully request your presence at the
             </p>
 
@@ -86,8 +86,8 @@ export default function InviteMessage() {
             <h2 className="mt-1 font-script text-5xl text-[#1a1814] sm:text-6xl">
               Nikah
             </h2>
-            <p className="mt-1 text-[9px] uppercase tracking-[0.35em] text-[#8a7a68] sm:text-[10px]">
-              OF OUR BELOVED DAUGHTER & GRANDDAUGHTER
+            <p className="mt-2 font-display text-[11px] uppercase tracking-[0.32em] text-[#8a7a68] sm:text-xs">
+              OF OUR BELOVED DAUGHTER
             </p>
 
             {/* Bride Details */}
@@ -95,18 +95,15 @@ export default function InviteMessage() {
               <h3 className="font-script text-4xl text-[#1a1814] sm:text-5xl">
                 {wedding.brideFull}
               </h3>
-              <p className="mt-2 text-[12px] tracking-wider text-[#5c5146] sm:text-sm">
+              <p className="mt-3 font-display text-base tracking-wide text-[#5c5146] sm:text-lg">
                 {wedding.brideParents}
-              </p>
-              <p className="mt-0.5 text-[11px] italic tracking-wide text-[#7a6d60] sm:text-[12px]">
-                {wedding.brideGrandparents}
               </p>
             </div>
 
             {/* Connector */}
             <div className="my-6 flex items-center gap-3">
               <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#1a1814]/20" />
-              <span className="text-[10px] uppercase tracking-[0.35em] text-[#8a7a68]">
+              <span className="font-display text-[11px] uppercase tracking-[0.35em] text-[#8a7a68]">
                 WITH
               </span>
               <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#1a1814]/20" />
@@ -117,7 +114,7 @@ export default function InviteMessage() {
               <h3 className="font-script text-4xl text-[#1a1814] sm:text-5xl">
                 {wedding.groomFull}
               </h3>
-              <p className="mt-2 text-[12px] tracking-wider text-[#5c5146] sm:text-sm">
+              <p className="mt-3 font-display text-base tracking-wide text-[#5c5146] sm:text-lg">
                 {wedding.groomParents}
               </p>
             </div>
