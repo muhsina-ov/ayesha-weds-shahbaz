@@ -11,7 +11,7 @@ export const wedding = {
   groomParents: "S/o Mohammad Seraj & Farzana Gani",
   hashtag: "#AyeshaaWedsShahbaz",
   monogram: "A · S",
-  families: "The Khan & Alam Families",
+  families: "The Khalid & Seraj Families",
 
   music: {
     src: "/audio/bg-music.mp3",
