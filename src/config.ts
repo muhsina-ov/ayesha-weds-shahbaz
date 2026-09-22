@@ -7,8 +7,8 @@ export const wedding = {
   groom: "Shahbaz",
   brideFull: "Ayesha",
   groomFull: "Shahbaz Alam",
-  brideParents: "D/o Mohammad Khalid Khan & Salma Begum",
-  groomParents: "S/o Mohammad Seraj & Farzana Gani",
+  brideParents: "D/o Mr. Mohammad Khalid Khan & Mrs. Salma Begum",
+  groomParents: "S/o Mr. Mohammad Seraj & Mrs. Farzana Gani",
   hashtag: "#AyeshaWedsShahbaz",
   monogram: "A · S",
   families: "The Khalid & Seraj Families",
@@ -22,7 +22,7 @@ export const wedding = {
   // Wedding (countdown + calendar) — Main ceremony: Nikah
   dateISO: "2026-12-12T19:00:00+05:30",
   dateLabel: "Saturday, 12th December 2026",
-  timeLabel: "Nikah · After 7:00 PM",
+  timeLabel: "Nikah · 7:00 PM",
 
   venue: {
     name: "Kothagudem Club",
@@ -89,7 +89,7 @@ export const wedding = {
   ],
 
   sections: {
-    events: false,
+    events: true,
     venue: true,
     countdown: true,
   },
