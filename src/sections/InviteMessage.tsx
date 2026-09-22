@@ -87,7 +87,7 @@ export default function InviteMessage() {
               Nikah
             </h2>
             <p className="mt-2 font-display text-[11px] uppercase tracking-[0.32em] text-[#8a7a68] sm:text-xs">
-              OF OUR BELOVED DAUGHTER
+              OF OUR BELOVED DAUGHTER & GRANDDAUGHTER
             </p>
 
             {/* Bride Details */}
@@ -97,6 +97,9 @@ export default function InviteMessage() {
               </h3>
               <p className="mt-3 font-display text-base tracking-wide text-[#5c5146] sm:text-lg">
                 {wedding.brideParents}
+              </p>
+              <p className="mt-1.5 font-display text-sm italic tracking-wide text-[#7a6d60] sm:text-base">
+                {wedding.brideGrandparents}
               </p>
             </div>
 
