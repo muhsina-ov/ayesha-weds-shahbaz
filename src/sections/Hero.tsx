@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { layerTransform, useParallax } from "../hooks/useParallax";
 import { CursorGlow } from "../components/FloatingPetals";
+import MonogramLogo from "../components/MonogramLogo";
 import { wedding } from "../config";
 
 const SPARKS = Array.from({ length: 28 }, (_, i) => ({
@@ -138,23 +139,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mb-6 flex h-28 w-28 items-center justify-center"
+            className="relative mb-6 flex h-32 w-32 items-center justify-center"
           >
-            <img
-              src="/assets/monogram.png"
-              alt="A S wedding monogram"
-              className="h-full w-full object-contain"
-              draggable={false}
-              onError={(e) => {
-                // Fallback to text monogram if image missing
-                const el = e.currentTarget;
-                el.style.display = "none";
-                el.nextElementSibling?.classList.remove("hidden");
-              }}
-            />
-            <span className="hidden font-script text-3xl text-[#1a1814] sm:text-4xl">
-              {wedding.monogram}
-            </span>
+            <MonogramLogo className="h-full w-full drop-shadow-[0_6px_16px_rgba(60,45,30,0.10)]" />
           </motion.div>
 
           <motion.p

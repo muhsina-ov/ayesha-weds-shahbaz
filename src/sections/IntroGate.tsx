@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import MonogramLogo from "../components/MonogramLogo";
 import { wedding } from "../config";
 
 const ease: [number, number, number, number] = [0.65, 0, 0.35, 1];
@@ -86,6 +87,14 @@ export default function IntroGate({
         animate={opening ? { opacity: 0, scale: 0.96, filter: "blur(6px)" } : { opacity: 1, scale: 1, filter: "blur(0px)" }}
         transition={{ duration: 0.5 }}
       >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.05, duration: 0.8 }}
+          className="mb-5 h-24 w-24"
+        >
+          <MonogramLogo className="h-full w-full" />
+        </motion.div>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
