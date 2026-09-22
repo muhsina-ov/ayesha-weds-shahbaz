@@ -75,17 +75,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* Ambient Reel Video Background Layer */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-25 mix-blend-multiply">
-        <video
-          src="/assets/video/hero-ambient.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="h-full w-full object-cover filter blur-[0.5px]"
-        />
-      </div>
+      {/* Ambient Reel Video Background Layer — removed per request */}
 
       <CursorGlow x={point.x} y={point.y} />
 

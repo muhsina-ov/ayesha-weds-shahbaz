@@ -3,13 +3,13 @@
 // ─────────────────────────────────────────────────────────────
 
 export const wedding = {
-  bride: "Ayeshaa",
+  bride: "Ayesha",
   groom: "Shahbaz",
-  brideFull: "Ayeshaa",
+  brideFull: "Ayesha",
   groomFull: "Shahbaz Alam",
   brideParents: "D/o Mohammad Khalid Khan & Salma Begum",
   groomParents: "S/o Mohammad Seraj & Farzana Gani",
-  hashtag: "#AyeshaaWedsShahbaz",
+  hashtag: "#AyeshaWedsShahbaz",
   monogram: "A · S",
   families: "The Khalid & Seraj Families",
 
