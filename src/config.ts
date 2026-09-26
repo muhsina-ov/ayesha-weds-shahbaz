@@ -27,7 +27,7 @@ export const wedding = {
 
   venue: {
     name: "Kothagudem Club",
-    address: "N.K. Nagar, Writer Basti, Kothagudem, Telangana 507101",
+    address: "Writer Basti, Kothagudem, Telangana 507101",
     mapsQuery: "Kothagudem Club, Kothagudem, Telangana 507101",
   },
 
