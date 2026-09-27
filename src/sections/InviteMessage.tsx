@@ -36,24 +36,48 @@ export default function InviteMessage() {
           {/* Inner arch border outline */}
           <div className="pointer-events-none absolute inset-3 rounded-[2.1rem] border border-[#1a1814]/10 sm:inset-4" />
 
-          {/* Top Bismillah & Quranic Verse */}
+          {/* Top Bismillah, Greetings & Quranic Verse */}
           <div className="flex flex-col items-center text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="mb-4 flex justify-center"
+            >
+              <img
+                src="/assets/bismillah-calligraphy.png"
+                alt="Bismillah Ar-Rahman Ar-Rahim"
+                className="h-12 sm:h-14 w-auto max-w-[240px] sm:max-w-[290px] object-contain drop-shadow-sm"
+              />
+            </motion.div>
+
             <motion.p
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="font-arabic text-2xl tracking-wide text-[#2e2b26] sm:text-3xl"
+              transition={{ delay: 0.1, duration: 0.8 }}
+              className="font-arabic text-xl sm:text-2xl tracking-wide text-[#2e2b26]"
             >
-              {wedding.verse.arabic}
+              السلام عليكم ورحمة الله وبركات
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.18, duration: 0.8 }}
+              className="mt-1 font-display text-sm italic tracking-wide text-[#5c5146] sm:text-base"
+            >
+              Assalamu Alaikum Wa Rahmatullahi Wa Barakatuh
             </motion.p>
 
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1, duration: 0.8 }}
-              className="mt-3 font-display text-base italic text-[#5c5146] sm:text-lg"
+              transition={{ delay: 0.26, duration: 0.8 }}
+              className="mt-4 font-display text-base italic text-[#5c5146] sm:text-lg"
             >
               {wedding.verse.quote}
             </motion.p>

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Lenis from "lenis";
 
-import BismillahIntro from "../sections/BismillahIntro";
 import IntroGate from "../sections/IntroGate";
 import Hero from "../sections/Hero";
 import InviteMessage from "../sections/InviteMessage";
@@ -18,7 +17,6 @@ import { wedding } from "../config";
 type Stage = "closed" | "opening" | "open";
 
 export default function Home() {
-  const [showBismillah, setShowBismillah] = useState(true);
   const [stage, setStage] = useState<Stage>("closed");
 
   useEffect(() => {
@@ -69,15 +67,6 @@ export default function Home() {
             key="intro-gate"
             onOpening={() => setStage("opening")}
             onOpened={() => setStage("open")}
-          />
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {showBismillah && (
-          <BismillahIntro
-            key="bismillah-intro"
-            onContinue={() => setShowBismillah(false)}
           />
         )}
       </AnimatePresence>

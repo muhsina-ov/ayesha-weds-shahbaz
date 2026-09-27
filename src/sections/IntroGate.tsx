@@ -111,6 +111,27 @@ export default function IntroGate({
         >
           {wedding.introGate?.title || "The Khan Family"}
         </motion.h2>
+
+        {/* Bismillah Calligraphy & Islamic Greeting */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.42, duration: 0.8 }}
+          className="mt-6 flex flex-col items-center"
+        >
+          <img
+            src="/assets/bismillah-calligraphy.png"
+            alt="Bismillah Ar-Rahman Ar-Rahim"
+            className="h-10 sm:h-12 w-auto max-w-[210px] sm:max-w-[250px] object-contain drop-shadow-sm"
+          />
+          <p className="mt-2.5 font-arabic text-lg sm:text-xl tracking-wide text-[#2e2b26]">
+            السلام عليكم ورحمة الله وبركات
+          </p>
+          <p className="mt-0.5 font-display text-xs italic tracking-wider text-[#6e6256] sm:text-sm">
+            Assalamu Alaikum Wa Rahmatullahi Wa Barakatuh
+          </p>
+        </motion.div>
+
         <motion.button
           type="button"
           onClick={handleOpen}
@@ -119,7 +140,7 @@ export default function IntroGate({
           transition={{ delay: 0.65, duration: 0.7 }}
           whileHover={{ scale: 1.04, y: -2 }}
           whileTap={{ scale: 0.97 }}
-          className="group mt-10 inline-flex items-center gap-3 rounded-full border border-[#1a1814]/15 bg-[#1a1814] px-7 py-3.5 text-[11px] uppercase tracking-[0.28em] text-[#f6f0e6] shadow-[0_16px_40px_rgba(40,30,20,0.18)] transition-[box-shadow] duration-500 ease-out hover:shadow-[0_22px_55px_rgba(40,30,20,0.3)]"
+          className="group mt-7 inline-flex items-center gap-3 rounded-full border border-[#1a1814]/15 bg-[#1a1814] px-7 py-3.5 text-[11px] uppercase tracking-[0.28em] text-[#f6f0e6] shadow-[0_16px_40px_rgba(40,30,20,0.18)] transition-[box-shadow] duration-500 ease-out hover:shadow-[0_22px_55px_rgba(40,30,20,0.3)]"
         >
           Open invitation
           <motion.span
