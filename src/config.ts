@@ -21,7 +21,7 @@ export const wedding = {
   music: {
     src: "/audio/bg-music.mp3",
     title: "Bismillah",
-    enabled: true,
+    enabled: false,
   },
 
   // Wedding (countdown + calendar) — Main ceremony: Nikah
