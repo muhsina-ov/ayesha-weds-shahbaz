@@ -8,7 +8,7 @@ export const wedding = {
   brideFull: "Ayesha",
   groomFull: "Shahbaz Alam",
   brideParents: "D/o Mr. Mohammad Khalid Khan & Mrs. Salma Begum",
-  brideGrandparents: "Granddaughter of Late Mr. Sardar Khan & Late Mrs. Khairunisa Begum",
+  brideGrandparents: "Granddaughter of the Late Mr. Sardar Khan & the Late Mrs. Khairunisa Begum",
   groomParents: "S/o Mr. Mohammad Seraj & Mrs. Farzana Gani",
   hashtag: "#AyeshaWedsShahbaz",
   monogram: "A · S",
