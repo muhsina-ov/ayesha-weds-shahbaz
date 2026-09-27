@@ -99,17 +99,17 @@ export default function IntroGate({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.7 }}
-          className="font-display text-[11px] uppercase tracking-[0.42em] text-[#6e6256]"
+          className="font-display text-[12px] uppercase tracking-[0.38em] text-[#6e6256]"
         >
-          An invitation
+          {wedding.introGate?.subtitle || "An Invitation From"}
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.28, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 font-script text-5xl text-[#1a1814] sm:text-6xl"
+          className="mt-3 font-script text-5xl text-[#1a1814] sm:text-6xl"
         >
-          {wedding.bride} & {wedding.groom}
+          {wedding.introGate?.title || "The Khan Family"}
         </motion.h2>
         <motion.button
           type="button"

@@ -13,6 +13,10 @@ export const wedding = {
   hashtag: "#AyeshaWedsShahbaz",
   monogram: "A · S",
   families: "The Khalid & Seraj Families",
+  introGate: {
+    subtitle: "An Invitation From",
+    title: "The Khan Family",
+  },
 
   music: {
     src: "/audio/bg-music.mp3",
